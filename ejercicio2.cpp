@@ -9,7 +9,7 @@ int alumnos = 25;//Cantidad de alumnos
 
 int main()
 {   
-    cout << "-----Regristro de alturas de los alumnos"<<endl;
+    cout << "-----Registro de alturas de los alumnos-----"<<endl;
     double alturas[alumnos-1];//Arreglo para las alturas
     double prom;//Promedio
 
