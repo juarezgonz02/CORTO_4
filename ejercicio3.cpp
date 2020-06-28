@@ -34,7 +34,7 @@ void registro(double notas[])
         double calificacion;
         cout << "Ingrese sus calificaciones: ";
         cin >> calificacion;
-        
+        //Si la nota es erronea se comprueba y se repite
         while (calificacion>10.0)
         {
             cout << "--Compruebe el numero introducido--"<<endl;
