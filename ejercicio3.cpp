@@ -41,10 +41,6 @@ void registro(double notas[])
             cout << "Ingrese sus calificaciones: ";
             cin >> calificacion;
         }
-        
-        if(calificacion>10.0){
-           
-        }
         notas[i] = calificacion;
     }
 }
