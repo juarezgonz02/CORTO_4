@@ -34,9 +34,16 @@ void registro(double notas[])
         double calificacion;
         cout << "Ingrese sus calificaciones: ";
         cin >> calificacion;
-        if(calificacion>10.0){
+        
+        while (calificacion>10.0)
+        {
             cout << "--Compruebe el numero introducido--"<<endl;
-            i-=1;
+            cout << "Ingrese sus calificaciones: ";
+            cin >> calificacion;
+        }
+        
+        if(calificacion>10.0){
+           
         }
         notas[i] = calificacion;
     }
