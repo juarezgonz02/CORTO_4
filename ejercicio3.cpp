@@ -7,11 +7,13 @@ double calculo_nFinal(double[]);
 int main()
 {
     double notas[4];//Calificaciones
+    cout << "-----Calculo de nota de final de periodo-----"<<endl;
+    
     registro(notas);//Se reciben las notas
 
-    int notaFinal = calculo_nFinal(notas);//resultado del calculo de la nota final
+    double notaFinal = calculo_nFinal(notas);//resultado del calculo de la nota final
     double Nminima = 6.0;//Nota minima para aprobar
-
+    
     /*
      Más o igual que la minima se aprueba, menos se reprueba
     */ 
@@ -32,6 +34,10 @@ void registro(double notas[])
         double calificacion;
         cout << "Ingrese sus calificaciones: ";
         cin >> calificacion;
+        if(calificacion>10.0){
+            cout << "--Compruebe el numero introducido--"<<endl;
+            i-=1;
+        }
         notas[i] = calificacion;
     }
 }

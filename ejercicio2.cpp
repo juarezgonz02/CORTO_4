@@ -16,7 +16,7 @@ int main()
     llenar(alturas);
     prom = promedio(alturas);//Se recibe el promedio de las alturas
 
-    cout << "El promedio de la altura de los alumnos es: " << prom << endl;
+    cout << "El promedio de la altura de los alumnos es: " << prom <<"m"<< endl;
     comparacion(prom, alturas);
 
     return 0;
@@ -29,7 +29,7 @@ void llenar(double alturas[]){
     {
         double altura;
         cout << "Alummno "<<i+1<<endl;
-        cout << "Ingresa tu altura: ";
+        cout << "Ingresa tu altura(metros): ";
         cin >> altura;
         alturas[i] = altura;
     }
